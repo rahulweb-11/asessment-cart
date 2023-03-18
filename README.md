@@ -17,6 +17,7 @@ After runnig the first screen will be the Login screen.
  for login use the following credentials:-
  
  Username - kminchelle
+ 
  Password - 0lelplR
  
   After successfully login All Products Listing is visible.
