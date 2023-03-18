@@ -1,0 +1,10 @@
+.pas-style .MuiInputBase-root{
+    /* border-radius: 17px; */
+    height: 52px;
+    margin-top: 2px;
+}
+.error{
+    color: red;
+    text-align: start;
+    margin-bottom: 5px;
+}

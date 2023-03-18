@@ -1,0 +1,463 @@
+@import "../assets/style/sass/variable";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span {
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  min-height: 100%;
+  position: relative;
+}
+.login_bg {
+  position: relative;
+}
+.login_bg:after {
+  content: "";
+
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("../assets/images/signin-bg.jpeg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: center;
+  background-size: cover;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  left: 0px;
+  z-index: 1;
+}
+
+// .css-dhrj60-MuiInputBase-root-MuiOutlinedInput-root {
+//   border-radius: 1rem !important;
+//   height: 54px;
+// }
+
+.right_grid {
+  .css-dhrj60-MuiInputBase-root-MuiOutlinedInput-root {
+    border-radius: 1rem !important;
+    height: 54px;
+  }
+  background-color: #fff;
+  // height: 100vh !important;
+
+  width: 100%;
+  .right_title {
+    text-align: right;
+    padding-top: 5%;
+    padding-right: 8%;
+    display: none;
+    span {
+      color: #adadad;
+    }
+  }
+  .form_waraper {
+    display: flex;
+    justify-content: center;
+    // margin-top: 8rem;
+    align-items: center;
+    flex-direction: column;
+    // padding-bottom: 10%;
+    height: 100vh;
+    overflow-y: auto;
+    .right_img {
+      margin-top: 8rem;
+    }
+
+    h4 {
+      color: #000;
+      font-weight: 600;
+      font-size: 2rem;
+      line-height: 60px;
+    //   font-family: "Poppins" !important;
+      margin-top: 0.8rem;
+    }
+  }
+  .input_wraper {
+    width: 65%;
+    padding-top: 1.2rem;
+    .css-1o9s3wi-MuiInputBase-input-MuiOutlinedInput-input {
+      // font-size: 1.5rem;
+      padding-left: 0.8rem;
+    }
+    .otp_subtitle {
+      color: #adadad;
+    //   font-family: "Poppins";
+      font-size: 1.5rem;
+      font-weight: 400;
+      line-height: 1.5rem;
+    }
+    .otp_subtitle2 {
+      display: flex;
+      align-items: center;
+      padding-top: 1rem;
+      // text-align: center;
+      .phone {
+        color: #e9a239;
+        // font-family: "Poppins";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 1.3rem;
+        line-height: 1.5rem;
+      }
+      .icon {
+        margin-left: 18px;
+      }
+      .edit {
+        color: #0a0045;
+        padding-left: 9px;
+        // font-family: "Poppins";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 140%;
+      }
+    }
+  }
+  .css-p5o6l8-MuiInputBase-root-MuiOutlinedInput-root {
+    border-radius: 15px;
+    height: 54px;
+  }
+  .forget_password {
+    display: flex;
+    justify-content: flex-end;
+    .text1 {
+      cursor: pointer;
+    }
+    span {
+    //   font-family: "Poppins";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 1rem !important;
+      line-height: 36px;
+      padding-top: 0.5rem;
+      opacity: 0.5;
+    }
+  }
+
+  .btn_bx {
+    padding-top: 2rem;
+    input {
+      font-size: 20px !important;
+    }
+    .login_btn {
+      background-color: #e9a239;
+      color: #000;
+      margin-bottom: 12px;
+      font-size: 1.2rem;
+      font-weight: 6000;
+    }
+    .registration_btn {
+      color: #000;
+      font-size: 1.2rem;
+      font-weight: 6000;
+    }
+    button {
+      width: 100%;
+      border-radius: 15px;
+      line-height: 45px;
+    //   font-family: "Poppins";
+      font-weight: 400;
+      font-style: normal;
+      // font-size: 30px;
+      // padding-bottom: 12px;
+      height: 54px;
+    }
+    .css-amchk4-MuiButtonBase-root-MuiButton-root {
+      padding: 16px 16px;
+    }
+  }
+}
+
+//otp field
+.password_bx {
+  margin-top: 0.8rem;
+}
+.otp_bx {
+  padding-top: 78px;
+  .otp_bx input {
+    width: 51px;
+    height: 47px;
+    font-size: 25px;
+    background-color: none;
+  }
+}
+
+.resend_otp {
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+//   font-family: "Poppins";
+  font-size: 14px;
+  line-height: 23px;
+  padding: 1.6rem 0;
+  .receive_code1 {
+    color: #667280;
+  }
+
+  p .otpActive {
+    padding-left: 1rem;
+    color: #e9a239;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    background: none;
+  }
+  p .otpDissabled {
+    padding-left: 1rem;
+    color: #e9a239;
+    pointer-events: none;
+    opacity: 0.5;
+    outline: none;
+    border: none;
+    background: none;
+  
+  }
+  .phone {
+    color: #0a0045;
+  }
+}
+.input_wraper .forget_password_subtitle {
+//   font-family: "Poppins";
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 2rem;
+}
+
+.otp_bx input:focus-visible {
+  outline-offset: none;
+  outline: none;
+}
+
+.bg_icon_view {
+  display: none;
+}
+//desktopview
+.mob_view_logo {
+  display: none;
+}
+.desktop_view_logo {
+  display: block;
+}
+
+//start..................................Create Account.............................
+
+//variables
+// $font-main: "Poppins";
+$border_color: #eaeaea;
+$label_color: #343a40;
+
+.create_account {
+  .MuiInputBase-root {
+    border-radius: 10px !important;
+    height: 54px;
+  }
+  .new_form {
+    // font-family: $font-main;
+    font-weight: 600;
+    line-height: 1.9rem;
+    font-size: 1.3rem;
+    padding-bottom: 1.1rem;
+  }
+}
+
+.main_container {
+  // margin: 2.7rem 4.7rem 3.8rem 4.7rem;
+
+  .css-4cup1j-MuiInputBase-root-MuiOutlinedInput-root {
+    padding: 6px;
+    height: 3.4rem;
+    padding-left: 1rem;
+  }
+  .css-1no0jen-MuiFormLabel-root-MuiInputLabel-root {
+    display: none;
+  }
+  .css-rnt4wx-MuiInputBase-root-MuiOutlinedInput-root-MuiSelect-root {
+    height: 3.4rem;
+  }
+
+  .form_title {
+    // font-family: $font-main;
+    font-weight: 600 !important;
+    color: #343a40;
+    line-height: 1.9rem;
+    font-size: 1.3rem !important;
+    // padding-bottom: 1.1rem;
+    // padding: 2rem 3.4rem 9px 3.4rem;
+    padding: 2rem 3.4rem 0.6rem 3.4rem;
+  }
+  .form_section {
+    background-color: #fff;
+    border: 1px solid $border_color;
+    border-radius: 10px;
+    .css-1213bs7-MuiFormControl-root-MuiTextField-root {
+      margin-bottom: 0;
+    }
+    .css-5v14ia-MuiInputBase-root-MuiOutlinedInput-root-MuiSelect-root {
+      margin-bottom: 0;
+    }
+    .form_wraper {
+      // padding: 2.5rem 3.4rem;
+      padding: 2rem 4.4rem 2.4rem 3.4rem;
+    }
+  }
+  .input_lable {
+    font-size: 1.2rem;
+    // font-family: $font-main;
+    font-weight: 700;
+    line-height: 1.6rem;
+    color: $label_color;
+    padding-bottom: 0.8rem;
+  }
+  .hideLable {
+    visibility: hidden;
+  }
+  .form_section2 {
+    padding-top: 2rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .main_container .form_section .form_wraper {
+    padding: 2rem 1.5rem 2.4rem 1.5rem;
+  }
+}
+
+//button
+.box_flex_center {
+  padding-top: 3.4rem;
+  .cancel_btn {
+    width: 10.5rem;
+    height: 2.5rem;
+    // font-family: $font-main;
+  }
+  .send_btn {
+    width: 10.5rem;
+    height: 2.5rem;
+    margin-left: 1.3rem;
+    color: #fff;
+    // font-family: $font-main;
+  }
+}
+.input_btn {
+  width: 10.5rem;
+  height: 2.5rem;
+  margin-left: 1.3rem;
+  color: #fff !important;
+//   font-family: $font-main;
+}
+
+//success Modal
+.success_modal_main {
+  text-align: center;
+  padding: 2rem 3.6rem;
+  .text1 {
+    // font-family: $font-main;
+    font-weight: 600 !important;
+    font-size: 1.5rem !important;
+    line-height: 2.3rem !important;
+  }
+  .text2 {
+    // font-family: $font-main;
+    font-weight: 400;
+    font-size: 1.1rem;
+    line-height: 1.5rem;
+    margin-top: 0.8rem;
+    display: inline-block;
+    padding: 0 2rem;
+  }
+}
+.custom_dialog_btn {
+  width: 0 auto;
+  button {
+    width: 13rem;
+    box-shadow: none;
+    height: 2.6rem;
+    margin-bottom: 2rem;
+  }
+}
+.success_modal .MuiPaper-root {
+  border-radius: 10px !important;
+}
+
+//end..................................Create Account...................................
+
+.text1 span:hover {
+  cursor: pointer;
+}
+
+//mobile view
+@media (max-width: "450px") {
+  // html {
+  //   font-size: 67.7%;
+  // }
+  // .input_wraper {
+  //   width: 90%;
+  // }
+  // .right_title{
+  //   display: block;
+  // }
+
+  // .login_bg {
+  //   display: none;
+  // }
+
+  .right_grid .form_waraper {
+    // margin-top: 16%;
+    height: 92vh;
+  }
+  .right_grid .input_wraper {
+    padding-top: 9%;
+  }
+  .bg_icon {
+    left: 5px;
+    top: 2px;
+  }
+  .right_grid .css-dhrj60-MuiInputBase-root-MuiOutlinedInput-root {
+    height: 60px;
+  }
+  .right_grid .btn_bx {
+    padding-top: 2.2rem;
+  }
+
+  .forget_password .text1 {
+    font-size: 19px;
+  }
+}
+
+@media (max-width: 768px) {
+  .mob_view_logo {
+    display: block;
+    width: 16rem;
+  }
+  .desktop_view_logo {
+    display: none;
+  }
+  .right_grid .form_waraper {
+    height: 100vh;
+  }
+  .right_grid .form_waraper.bg_icon_view img {
+    width: 6rem;
+  }
+}
+
+// @media (min-width: 899px) and (max-width: 1285px) {
+//   .right_grid .btn_bx .login_btn{
+//     font-size: 1.2rem;
+//   }
+// }

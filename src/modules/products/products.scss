@@ -1,0 +1,25 @@
+.header-color .MuiPaper-root{
+    background-color: #e9a239 !important;
+}
+.card-row{
+    max-width: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+}
+.card-img-top{
+    height: 150px;
+}
+.card-text{
+    height: 150px;
+}
+.card{
+    box-shadow: 2px 0px 7px 3px #5c5c5c33;
+}
+.btnclr{
+    background-color: #e9a239 !important;
+    color: #FFF !important;
+    font-size: 12px !important;
+    font-weight: 400 !important;
+}
