@@ -32,5 +32,6 @@ After runnig the first screen will be the Login screen.
 5. Axios for API call
     
 <-------------Optimization------------->
+ 
 Used custom debounce hook for search filter.
 Used token authentication for login.
