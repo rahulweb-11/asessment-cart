@@ -26,7 +26,7 @@ export const Cards = ({cardTitle, cardText,imgPath,btnText,id,cardPrice }) => {
            <br/>
            <b>${cardPrice}</b>
           </p>
-          <Button onClick={()=>goToSinglePage(id)} id={id} className="btn btnclr mt-3">
+          <Button onClick={()=>goToSinglePage(id)} id={id} className="btn btnclr">
             {btnText}
           </Button>
         </div>

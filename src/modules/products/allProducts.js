@@ -64,7 +64,7 @@ export const AllProducts = () => {
                 cardTitle={item?.title}
                 imgPath={item?.images[0]}
                 btnText="View Product"
-                cardText={item?.description}
+                cardText={item?.description.slice(0,50)+"..."}
                 id={item?.id}
                 cardPrice={item?.price}
               />
