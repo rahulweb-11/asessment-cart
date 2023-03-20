@@ -14,19 +14,6 @@ export const AllProducts = () => {
   const searchResult = useDebounce(search, 2000);
   const dispatch = useDispatch();
   const [listProducts, setListProducts] = useState([]);
-  const [page, setPage] = React.useState(0);
-  const [rowsPerPage, setRowsPerPage] = React.useState(10);
-
-  const handleChangePage = (event, newPage) => {
-    setPage(newPage);
-  };
-
-  const handleChangeRowsPerPage = (event) => {
-    setRowsPerPage(parseInt(event.target.value));
-    const newArr = listProducts.slice(0,event.target.value);
-    setListProducts(newArr)
-    setPage(0);
-  };
 
   useEffect(() => {
     dispatch(
@@ -70,14 +57,7 @@ export const AllProducts = () => {
               />
             ))}
           </div>
-          <TablePagination
-            component="div"
-            count={10}
-            page={page}
-            onPageChange={handleChangePage}
-            rowsPerPage={rowsPerPage}
-            onRowsPerPageChange={handleChangeRowsPerPage}
-          />
+         
         </div>
       </div>
     </>
